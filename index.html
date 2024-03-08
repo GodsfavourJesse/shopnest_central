@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>ShopNest Central</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+          <div class="container">
+               <div class="navbar">
+                    <p class="logo">ShopNest <span>Central</span></p>
+                    <nav id="menuList">
+                         <ul>
+                              <li><a href="" id="home">Home</a></li>
+                              <li><a href="">ShopNest</a></li>
+                              <li><a href="">Categories</a></li>
+                              <li><a href="">About us</a></li>
+                              <li><a href="">Contact us</a></li>
+                         </ul>
+                         <div class="icons">
+                              <i class="fa-solid fa-shopping-cart"></i>
+                              <i class="fa-solid fa-user"></i>
+                              <i class="fa-solid fa-heart"></i>
+                         </div>
+                    </nav>
+                    <div class="menu-icon" onclick="togglemenu()">
+                         <i class="fa-solid fa-bars"></i>
+                    </div>
+               </div>
+
+               <div class="row">
+
+                    <div class="col-1">
+                         <h2>ShopNest Central</h2>
+                         <h3>Wireless Controller for Playstation 4</h3>
+                         <p>Compatible/Generic</p>
+                         <h4>$45.50</h4>
+                         <button type="button">Buy Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+
+                    <div class="col-2">
+                         <img src="images/whitepad.jpg" alt="" class="controller">
+                         <div class="add-btn">
+                              <i class="fa-solid fa-add"></i>
+                              <p>Add to cart</p>
+                              <div class="social-icons">
+                                   <i class="fa-brands fa-facebook"></i>
+                                   <i class="fa-brands fa-tiktok" id="small"></i>
+                                   <i class="fa-brands fa-telegram"></i>
+                                   <i class="fa-brands fa-instagram"></i>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+
+          
+
+    <script>
+
+     var menuList = document.getElementById("menuList");
+
+     menuList.style.maxHeight = "0px";
+
+     function togglemenu(){
+
+          if(menuList.style.maxHeight == "0px")
+               {
+                    menuList.style.maxHeight = "300px";
+                }
+          else
+               {
+                    menuList.style.maxHeight = "0px";
+               }
+     }
+
+    </script> 
+</body>
+</html>
